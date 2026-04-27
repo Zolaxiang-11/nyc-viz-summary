@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYC ZIPCode 人口时序散点密度图</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <div class="viz-frame" id="viz-frame">
+        <header class="viz-header">
+          <h1>纽约市 ZIPCode 人口时序可视化（2011-2024）</h1>
+          <p class="lead">
+            上方：按年份堆叠柱（柱顶为全市总人口，单位万）；下方：年份 × ZIPCode（总人口前 20 区）网格色块图：格内按族裔横向排列，宽度按各族绝对人数分配，满宽参照为全表「单格总人口」的最大值，不足部分留白。
+          </p>
+        </header>
+        <div class="viz-layout">
+          <div class="viz-main" id="viz-main">
+            <section class="panel chart-panel" id="stacked-panel">
+              <svg id="stacked-chart" preserveAspectRatio="none"></svg>
+              <aside id="legend" class="legend-on-top" aria-label="图例"></aside>
+            </section>
+            <section class="panel grid-panel" id="grid-panel">
+              <canvas id="grid-canvas"></canvas>
+              <svg id="grid-axis" preserveAspectRatio="none"></svg>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./main.js?v=20260427-scatter3"></script>
+  </body>
+  </html>
+

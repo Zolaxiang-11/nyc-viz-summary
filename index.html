@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>可视化图表汇总</title>
+    <link rel="stylesheet" href="./style.css?v=20260427-4" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>可视化图表汇总页</h1>
+        <p>按指定顺序上下排布，页面可垂直滚动；每个图表通过 iframe 原样加载，交互逻辑保持不变。</p>
+      </header>
+
+      <section class="card">
+        <h2>1) viz-population-yearly-change</h2>
+        <iframe
+          class="viz-frame"
+          src="./apps/viz-population-yearly-change/index.html?v=20260427-scatter4"
+          title="viz-population-yearly-change"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <h2>2) viz-population-zip-rings</h2>
+        <iframe
+          class="viz-frame"
+          src="./apps/viz-population-zip-rings/index.html"
+          title="viz-population-zip-rings-first"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <h2>3) viz-education-level</h2>
+        <iframe
+          class="viz-frame viz-frame-education"
+          src="./apps/viz-education-level/index.html?v=20260427-3"
+          title="viz-education-level"
+          scrolling="no"
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <section class="card">
+        <h2>4) viz-safety-borough-linebox</h2>
+        <iframe
+          class="viz-frame viz-frame-safety"
+          src="./apps/viz-safety-borough-linebox/index.html?v=20260427-5"
+          title="viz-safety-borough-linebox"
+          scrolling="no"
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>
